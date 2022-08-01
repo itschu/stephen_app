@@ -1,0 +1,19 @@
+.hero {
+	background-color: rgb(202, 202, 202);
+	background-image: url("../public/bg.jpg");
+	background-position: top;
+	background-size: cover;
+}
+
+.heroTextWrapper {
+	/* background-image: url("../public/hero-bg.png"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background: linear-gradient(
+		105.29deg,
+		rgba(15, 89, 197, 0.45) 0%,
+		rgba(30, 158, 145, 0.45) 100%
+	);
+	background-attachment: fixed;
+}

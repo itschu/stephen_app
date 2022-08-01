@@ -1,0 +1,10 @@
+.navLinks {
+	color: #fff;
+}
+
+.active {
+	padding: 5px 25px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	font-weight: 600;
+}
