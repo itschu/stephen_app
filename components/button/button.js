@@ -1,21 +1,35 @@
 import { useContact } from "../../context/contact";
 
-const Button = ({ text, icon = false, outline = true, color = "#fff", fn }) => {
+const Button = ({
+	text,
+	icon = false,
+	outline = true,
+	color = "#fff",
+	fn,
+	sm = false,
+}) => {
 	const { showContext, setShowContext } = useContact();
 
 	return (
 		<button
-			className={`flex items-center py-3 px-7 rounded-full gap-3 z-10`}
+			className={`flex items-center py-3 px-7 rounded-full gap-3 z-10 `}
 			style={{
 				color,
-				border: outline ? `2px solid ${color}` : `2px solid #fff}`,
+				border: outline
+					? `2px solid ${color}`
+					: sm
+					? `2px solid ${color}`
+					: `2px solid #fff`,
 				textTransform: "capitalize",
-				fontSize: 15,
 				backgroundColor: outline ? "transparent" : "#fff",
 			}}
 			onClick={() => fn && setShowContext(!showContext)}
 		>
-			<span className={`${outline || "font-bold"}`}>{text}</span>
+			<span
+				className={`${outline || "font-bold"} text-middy md:text-base`}
+			>
+				{text}
+			</span>
 			{icon && (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

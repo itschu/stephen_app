@@ -84,9 +84,8 @@ const About = () => {
 						style={{
 							maxWidth: "70ch",
 							lineHeight: "175%",
-							fontSize: 17,
 						}}
-						className="md:text-justify text-left"
+						className="text-base md:text-big md:text-justify text-left"
 					>
 						Vision statement: Our vision is to provide satisfaction
 						with our works, easy accessibility to a vendor that

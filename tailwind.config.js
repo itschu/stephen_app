@@ -9,6 +9,10 @@ module.exports = {
 			fontFamily: {
 				body: ["Nunito"],
 			},
+			fontSize: {
+				middy: "15px",
+				big: "17px",
+			},
 		},
 	},
 	plugins: [],

@@ -24,7 +24,7 @@ const Service = () => {
 							</h4>
 							<p
 								id="service-text"
-								className="text-sm md:text-base text-center md:text-left leading-6"
+								className="text-base md:text-big text-center md:text-left leading-6"
 							>
 								We carry out all kinds of Air conditioner
 								installation, from home AC installation to
@@ -44,7 +44,7 @@ const Service = () => {
 							</h4>
 							<p
 								id="service-text"
-								className="text-sm md:text-base text-center md:text-left leading-6"
+								className="text-base md:text-big text-center md:text-left leading-6"
 							>
 								Wiring your homes, office space e.t.c
 								shouldn&apos;t be much of a hassle anymore, we
@@ -64,7 +64,7 @@ const Service = () => {
 							</h4>
 							<p
 								id="service-text"
-								className="text-sm md:text-base text-center md:text-left leading-6"
+								className="text-base md:text-big text-center md:text-left leading-6"
 							>
 								We also carry out professional air conditioner
 								maintenance,

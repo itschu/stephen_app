@@ -8,10 +8,9 @@ const WhyCard = ({ text, img }) => {
 			</div>
 			<div>
 				<p
-					className=" md:px-5 my-5 text-center"
+					className=" md:px-5 my-5 text-center text-base md:text-big"
 					style={{
 						lineHeight: "175%",
-						fontSize: 16,
 					}}
 				>
 					{text}
