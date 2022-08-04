@@ -66,6 +66,7 @@ const ContactForm = () => {
 				show: true,
 				message: "Sorry an error occurred please try again later",
 			});
+			console.log(err);
 		}
 		setLoading(false);
 		router.push("/contact#form");
