@@ -5,12 +5,10 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Welcome = () => {
-	const { ref, inView } = useInView({ threshold: 0.3 });
+	const { ref, inView } = useInView({ threshold: 0.2 });
 	const animation = useAnimation();
 
 	useEffect(() => {
-		console.log(inView);
-
 		if (inView) {
 			animation.start({
 				scale: 1,
@@ -41,19 +39,31 @@ const Welcome = () => {
 			>
 				<div className=" flex gap-5 items-center">
 					<div className="relative welcome-shadow" id="large">
-						<Image src="/about-1.jpg" layout="fill" />
+						<Image
+							src="/about-1.jpg"
+							layout="fill"
+							alt="decorative"
+						/>
 					</div>
 					<div
 						className="relative hidden md:block welcome-shadow"
 						id="medium"
 					>
-						<Image src="/about-2.jpg" layout="fill" />
+						<Image
+							src="/about-2.jpg"
+							layout="fill"
+							alt="decorative"
+						/>
 					</div>
 					<div
 						className="relative hidden md:block welcome-shadow"
 						id="low"
 					>
-						<Image src="/about-3.jpg" layout="fill" />
+						<Image
+							src="/about-3.jpg"
+							layout="fill"
+							alt="decorative"
+						/>
 					</div>
 				</div>
 				<div className="flex flex-col gap-5 items-start">

@@ -1,4 +1,5 @@
 import { useContact } from "../../context/contact";
+import { useRouter } from "next/router";
 
 const Button = ({
 	text,
@@ -9,7 +10,7 @@ const Button = ({
 	sm = false,
 }) => {
 	const { showContext, setShowContext } = useContact();
-
+	const router = useRouter();
 	return (
 		<button
 			className={`flex items-center py-3 px-7 rounded-full gap-3 z-10 `}
@@ -23,7 +24,7 @@ const Button = ({
 				textTransform: "capitalize",
 				backgroundColor: outline ? "transparent" : "#fff",
 			}}
-			onClick={() => fn && setShowContext(!showContext)}
+			onClick={() => fn && router.push("/contact")}
 		>
 			<span
 				className={`${outline || "font-bold"} text-middy md:text-base`}

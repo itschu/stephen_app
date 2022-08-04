@@ -9,10 +9,12 @@ import { Contact } from "../context/contact";
 import ContactModal from "../components/contact";
 import Nav from "../components/nav";
 import { Menu } from "../context/menu";
+import HtmlHead from "../components/head";
 
 const Index = () => {
 	return (
 		<Contact>
+			<HtmlHead currentPage={`Home`} />
 			<div className={`font-body text-gray-700 overflow-hidden `}>
 				<Menu>
 					<Nav />

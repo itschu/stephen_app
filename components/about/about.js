@@ -90,11 +90,12 @@ const About = () => {
 						Vision statement: Our vision is to provide satisfaction
 						with our works, easy accessibility to a vendor that
 						cares about the work they do, pay attention to details
-						at affordable low prices that suits everyone. Background
-						description: We provide customers with the following
-						services: AC installation Electrical maintenance
-						Electrical wiring AC maintenance. With 5 years
-						experience in the business, we have built a strong
+						at affordable low prices that suits everyone. <br />
+						<br />
+						Background description: We provide customers with the
+						following services: AC installation Electrical
+						maintenance Electrical wiring AC maintenance. With 5
+						years experience in the business, we have built a strong
 						relationship with previous clients and looking to expand
 						our client base in order to bring ease and satisfaction
 						to everything customers set there.

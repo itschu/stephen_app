@@ -74,7 +74,7 @@ const ContactForm = () => {
 	return (
 		<div className="m-10 mx-5 md:mx-28 mt-14">
 			<h2 className="font-bold text-xl md:text-3xl text-center">
-				Let's start a conversation
+				Let&apos;s start a conversation
 			</h2>
 
 			<div className="grid md:grid-cols-3 gap-20 mt-10 md:mt-24">
@@ -146,7 +146,6 @@ const ContactForm = () => {
 						duration: 1.3,
 						type: "spring",
 						delay: 0.4,
-						// stiffness: 200,
 					}}
 				>
 					<h3 className="font-bold">
