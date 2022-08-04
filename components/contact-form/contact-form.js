@@ -33,14 +33,17 @@ const ContactForm = () => {
 		}
 
 		try {
-			const res = await fetch(`http://get.peculyn.com/api/v1/sendMail/`, {
-				method: "POST",
-				headers: {
-					Accept: "application/json",
-					Authorization: process.env.NEXT_PUBLIC_API_KEY,
-				},
-				body: JSON.stringify(contactInfo),
-			});
+			const res = await fetch(
+				`https://globalelectric.peculyn.com/api/v1/sendMail/`,
+				{
+					method: "POST",
+					headers: {
+						Accept: "application/json",
+						Authorization: process.env.NEXT_PUBLIC_API_KEY,
+					},
+					body: JSON.stringify(contactInfo),
+				}
+			);
 			const response = await res.json();
 			if (response == "done") {
 				setSuccess({
@@ -66,7 +69,6 @@ const ContactForm = () => {
 				show: true,
 				message: "Sorry an error occurred please try again later",
 			});
-			console.log(err);
 		}
 		setLoading(false);
 		router.push("/contact#form");

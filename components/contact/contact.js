@@ -17,7 +17,6 @@ const ContactModal = () => {
 
 	const sendMail = async (e) => {
 		e.preventDefault();
-		console.log("dd");
 		try {
 			const res = await fetch(
 				`https://globalelectricaltech.net/api/v1/sendMail/`,
@@ -32,7 +31,6 @@ const ContactModal = () => {
 				}
 			);
 			const response = await res.json();
-			console.log(response);
 			if (response == "done") {
 				setSuccess({
 					show: true,
