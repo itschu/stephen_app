@@ -39,15 +39,17 @@ const MenuDropDown = () => {
 					</li>
 				</Link>
 
-				<li
-					className="p-2"
-					onClick={() => {
-						setShowMenu(false);
-						setShowContext(!showContext);
-					}}
-				>
-					Contact
-				</li>
+				<Link href={"/contact"}>
+					<li
+						className="p-2"
+						// onClick={() => {
+						// 	setShowMenu(false);
+						// 	setShowContext(!showContext);
+						// }}
+					>
+						Contact
+					</li>
+				</Link>
 			</ul>
 		</div>
 	);

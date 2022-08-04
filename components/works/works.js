@@ -2,18 +2,11 @@ import Button from "../button";
 import Image from "next/image";
 
 const Works = () => {
-	const bg = {
-		backgroundImage: "url(/works.jpg)",
-		backgroundPosition: "center",
-		backgroundSize: "cover",
-	};
+	const bg = {};
 
 	return (
-		<div className="relative">
-			<div
-				id="works"
-				className="py-14 md:py-12 px-4 md:px-10 flex flex-col gap-12 items-center h-screen"
-			>
+		<div className="relative" id="works">
+			<div className="py-14 md:py-12 px-4 md:px-10 flex flex-col gap-12 items-center h-screen overlay">
 				<div className="absolute top-0 left-0 bottom-0 right-0 z-0" />
 
 				<h2 className="heading font-extrabold md:mb-0 text-white self-start z-10">

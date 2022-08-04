@@ -13,7 +13,7 @@ import { Menu } from "../context/menu";
 const Index = () => {
 	return (
 		<Contact>
-			<div className={`font-body text-gray-700 `}>
+			<div className={`font-body text-gray-700 overflow-hidden `}>
 				<Menu>
 					<Nav />
 					<Hero />

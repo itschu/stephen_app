@@ -10,6 +10,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	scroll-behavior: smooth;
+	scroll-padding: 60px;
 }
 
 a {
@@ -39,7 +40,7 @@ a {
 }
 
 .input {
-	@apply border border-neutral-500 p-2 px-3 rounded-sm w-full block text-xs mt-2 h-12 md:h-12;
+	@apply border border-neutral-500 p-2 px-3 rounded-sm w-full block text-sm mt-2 h-12 md:h-12;
 }
 
 label {
@@ -57,6 +58,10 @@ label {
 
 ul li {
 	@apply cursor-pointer;
+}
+
+.p-span {
+	@apply font-bold mr-3 text-base;
 }
 
 @layer components {
@@ -95,7 +100,19 @@ ul li {
 	);
 }
 
+#why-work {
+	background-image: url(/about-3.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
 #works {
+	background-image: url(/works.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.overlay {
 	background-image: linear-gradient(
 		107.93deg,
 		rgba(17, 97, 191, 0.85) 0%,

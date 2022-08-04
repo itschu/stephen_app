@@ -4,7 +4,7 @@ const NigStates = ({ userDetails, setUserDetails }) => {
 			<label>State</label>
 			<select
 				className="input"
-				value={userDetails.state}
+				value={userDetails.state || ""}
 				onChange={(e) =>
 					setUserDetails({
 						...userDetails,

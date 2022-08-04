@@ -8,12 +8,12 @@ import { useMenu } from "../../context/menu";
 
 const Nav = () => {
 	const router = useRouter();
-	const { showContext, setShowContext } = useContact();
+	const { setShowContext } = useContact();
 	const { showMenu, setShowMenu } = useMenu();
 
 	return (
-		<div className="relative">
-			<div className="flex items-center justify-between px-6 md:mx-20 py-3 md:pt-5 fixed  md:absolute  w-full md:w-auto top-0 left-0 right-0 z-30  bg-white md:bg-transparent shadow-lg md:shadow-none">
+		<div className="relative ">
+			<div className="flex items-center justify-between px-6 md:mx-20 py-3 md:pt-5 fixed  md:absolute  w-full md:w-auto top-0 left-0 right-0 z-30  bg-white md:bg-transparent shadow-lg md:shadow-none mt-0 md:mt-2 ">
 				<div
 					id="logo"
 					className="w-20 h-12 md:w-28 md:h-14 rounded-full relative"
@@ -48,9 +48,11 @@ const Nav = () => {
 						className={`${styles.navLinks} ${
 							router.pathname == "/contact" && styles.active
 						}`}
-						onClick={() => setShowContext(!showContext)}
+						// onClick={() => setShowContext(!showContext)}
 					>
-						<a className="">Contact</a>
+						<Link className="" href={"/contact"}>
+							Contact
+						</Link>
 					</li>
 				</ul>
 
@@ -61,11 +63,11 @@ const Nav = () => {
 					{showMenu ? (
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="h-8 w-8 cursor-pointer hover:text-red-500"
+							className="h-6 w-6 cursor-pointer hover:text-red-500"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
-							strokeWidth={3}
+							strokeWidth={2}
 							onClick={() => setShowContext(false)}
 						>
 							<path
@@ -77,7 +79,7 @@ const Nav = () => {
 					) : (
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							className="h-8 w-8"
+							className="h-6 w-6"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"

@@ -1,9 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Footer = () => {
+const Footer = ({ margin = false }) => {
 	return (
-		<div id="footer" className="py-5 px-6 md:px-10 h-fit">
+		<div
+			id="footer"
+			className={`py-5 px-6 md:px-10 h-fit ${
+				margin && "border-t border-t-grey-700"
+			}`}
+		>
 			<div className="flex gap-5 md:gap-20 items-center justify-between flex-col md:flex-row">
 				<div className="flex gap-5 md:gap-14 items-center flex-col md:flex-row">
 					<div className="h-14 w-28 relative">
@@ -27,7 +32,7 @@ const Footer = () => {
 
 					<a
 						className="flex gap-2 items-center text-base"
-						href="mailto:support@globalelectricaltech.com"
+						href="mailto:stephenenyalee@gmail.com"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +43,7 @@ const Footer = () => {
 							<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
 							<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
 						</svg>
-						<span>support@globalelectricaltech.net</span>
+						<span>stephenenyalee@gmail.com</span>
 					</a>
 				</div>
 

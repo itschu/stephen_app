@@ -2,23 +2,9 @@ import Button from "../button";
 import ServiceCard from "../why-card";
 
 const WhyWork = () => {
-	const bg = {
-		backgroundImage: "url(/about-3.jpg)",
-		backgroundPosition: "center",
-		backgroundSize: "cover",
-	};
-
-	const overlay = {
-		backgroundImage:
-			"linear-gradient(107.93deg, rgba(17, 97, 191, 0.85) 0%, rgba(158, 181, 209, 0.282031) 0.01%, rgba(16, 95, 193, 0.85) 0.02%, rgba(30, 159, 145, 0.85) 100%, rgba(29, 154, 148, 0.85) 100%)",
-	};
-
 	return (
-		<div id="works" className=" relative" style={bg}>
-			<div
-				className="absolute top-0 left-0 bottom-0 right-0 z-0"
-				style={overlay}
-			/>
+		<div id="why-work" className=" relative">
+			<div className="absolute top-0 left-0 bottom-0 right-0 z-0 overlay" />
 
 			<div className="z-10 py-14 md:py-16 px-6 md:px-10 h-fit flex flex-col gap-14 items-center ">
 				<h2 className="heading font-extrabold mb-0 md:mb-10 text-white self-start z-10">
